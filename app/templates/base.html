@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+         <title>{{ title }} - Bankoblog</title>
+        {% else %}
+         <title>Welcome to Bankoblog!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Bannkoblog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
